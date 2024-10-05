@@ -1,0 +1,139 @@
+/* FileExplorer.css */
+
+/* Container styling for folder and file items */
+.folder,
+.file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin: 4px 0;
+    cursor: pointer;
+    /* Apply pointer cursor */
+}
+
+/* Folder container */
+.folder {
+    background-color: #f8f8f8;
+}
+
+/* File container */
+.file {
+    background-color: #f0f0f0;
+}
+
+/* Folder and file name styling */
+.folder-name,
+.file p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Operations container for buttons/icons (add, edit, delete) */
+.operations {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 8px;
+}
+
+/* Styling for individual operation buttons */
+.operations span {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect for operation buttons */
+.operations span:hover {
+    background-color: #dfe3e8;
+    color: #007bff;
+}
+
+/* Styling for add, edit, and delete buttons/icons */
+.add span,
+.delete span,
+.edit span {
+    margin-left: 8px;
+}
+
+/* Input field styling */
+input {
+    margin-left: 8px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+/* Focus state for input field */
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Children folder/file container */
+.children {
+    padding-left: 0;
+    /* Remove left padding */
+    margin-left: 16px;
+    /* Keep items aligned in the same vertical line */
+    border-left: 2px dashed #d0d0d0;
+    /* Add a left border for visual hierarchy */
+}
+
+/* Add icon container styling */
+.add {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Delete icon container styling */
+.delete {
+    display: flex;
+    align-items: center;
+}
+
+/* Edit icon container styling */
+.edit {
+    display: flex;
+    align-items: center;
+}
+
+/* Folder and file icon styling */
+.folder-name>p,
+.file>p {
+    margin-right: auto;
+}
+
+/* Adjust margin and padding for better spacing */
+.folder-name {
+    padding: 4px 0;
+}
+
+/* Style the edit mode input */
+.edit-input {
+    margin-left: 8px;
+}
+
+/* Add cursor pointer for folder names */
+.folder-name,
+.file {
+    cursor: pointer;
+    /* Apply pointer cursor for folder and file names */
+}
+
+/* Hover effect for folder and file names */
+.folder-name:hover,
+.file:hover {
+    background-color: #e6f7ff;
+}
